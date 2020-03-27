@@ -18,7 +18,7 @@ public class AddBookController {
 	@RequestMapping("/add.do")
 	@ResponseBody
 	public NoteResult<Book> execute(String userId,String title){
-
+        System.out.println();
 		NoteResult<Book> result = bookService.addBook(userId, title);
 		return result;
 	}
